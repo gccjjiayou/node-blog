@@ -16,6 +16,7 @@ module.exports = function () {
     res.render('./admin/index.ejs', {})
   })
   router.use('/banners', require('./banners.js')())
+  router.use('/custom', require('./custom.js')())
  
   return router
 }
